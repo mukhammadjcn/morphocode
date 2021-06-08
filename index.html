@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morphocode</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <a href="">
+                <svg width="120" height="15" viewBox="0 0 120 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M0 0H120V15H0V0Z" fill="url(#pattern0)" />
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0" transform="translate(0 -0.0135135) scale(0.00337838 0.027027)" />
+                        </pattern>
+                        <image id="image0" width="296" height="38"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav-list__item"><a href="">About</a></li>
+                    <li class="nav-list__item"><a href="">Blog</a></li>
+                    <li class="nav-list__item"><a href="">Work</a></li>
+                    <li class="nav-list__item"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 1st Section-->
+
+        <section class="section">
+            <div class="section-text__wrapper mr-1">
+                <h2 class="section-text__wrapper-title">
+                    Exploring cities through data analysis and visualization
+                </h2>
+                <p class="section-text__wrapper-text">
+                    Morphocode is a design and development firm that uses data to visualize urban dynamics and provide
+                    location insights. Our team brings together expertise across architecture, urban planning, and
+                    software engineering.
+                </p>
+            </div>
+
+            <div class="section-img__wrapper">
+                <img src="img/1.png" alt="">
+            </div>
+        </section>
+
+        <!-- 2nd Section-->
+        <section class="section">
+            <div class="section-img__wrapper mr-1">
+                <img src="img/2.png" alt="">
+            </div>
+            <div class="section-text__wrapper">
+                <h2 class="section-text__wrapper-title">
+                    Exploring cities through data analysis and visualization
+                </h2>
+                <p class="section-text__wrapper-text">
+                    Morphocode is a design and development firm that uses data to visualize urban dynamics and provide
+                    location insights. Our team brings together expertise across architecture, urban planning, and
+                    software engineering.
+                </p>
+                <a class="section-text__wrapper-link" href="">View Projects</a>
+            </div>
+
+
+        </section>
+
+        <!-- 3rd Section-->
+        <section class="section">
+            <div class="section-text__wrapper">
+                <h2 class="section-text__wrapper-title">
+                    Exploring cities through data analysis and visualization
+                </h2>
+                <p class="section-text__wrapper-text">
+                    Morphocode is a design and development firm that uses data to visualize urban dynamics and provide
+                    location insights. Our team brings together expertise across architecture, urban planning, and
+                    software engineering.
+                </p>
+                <a class="section-text__wrapper-link" href="">Start learning</a>
+            </div>
+
+            <div class="section-img__wrapper mr-1">
+                <img src="img/3.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- Blog section -->
+
+        <section class="blog-section">
+            <h3 class="blog-section__title">From the blog</h3>
+
+            <div class="blog-wrapper">
+                <article class="blog-post">
+                    <div class="blog-img-wrapper">
+                        <img src="img/4.png" alt="">
+                    </div>
+                    <div class="blog-post-text">
+                        <a href="#">The power of interactive tools</a>
+                        <hr class="blog-post-text_hr"> 
+                        <p>Tools augment our problem-solving capacity. We rely on them to expand our minds and provide
+                            ease, accuracy, and [...]</p>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-img-wrapper">
+                        <img src="img/5.png" alt="">
+                    </div>
+                    <div class="blog-post-text">
+                        <a href="#">The power of interactive tools</a>
+                        <hr class="blog-post-text_hr">
+                        <p>Tools augment our problem-solving capacity. We rely on them to expand our minds and provide
+                            ease, accuracy, and [...]</p>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-img-wrapper">
+                        <img src="img/6.png" alt="">
+                    </div>
+                    <div class="blog-post-text">
+                        <a href="#">The power of interactive tools</a>
+                        <hr class="blog-post-text_hr">
+                        <p>Tools augment our problem-solving capacity. We rely on them to expand our minds and provide
+                            ease, accuracy, and [...]</p>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-wrapper">
+                <article class="blog-post">
+                    <div class="blog-img-wrapper">
+                        <img src="img/4.png" alt="">
+                    </div>
+                    <div class="blog-post-text">
+                        <a href="#">The power of interactive tools</a>
+                        <hr class="blog-post-text_hr">
+                        <p>Tools augment our problem-solving capacity. We rely on them to expand our minds and provide
+                            ease, accuracy, and [...]</p>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-img-wrapper">
+                        <img src="img/5.png" alt="">
+                    </div>
+                    <div class="blog-post-text">
+                        <a href="#">The power of interactive tools</a>
+                        <hr class="blog-post-text_hr">
+                        <p>Tools augment our problem-solving capacity. We rely on them to expand our minds and provide
+                            ease, accuracy, and [...]</p>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <div class="blog-img-wrapper">
+                        <img src="img/6.png" alt="">
+                    </div>
+                    <div class="blog-post-text">
+                        <a href="#">The power of interactive tools</a>
+                        <hr class="blog-post-text_hr">
+                        <p>Tools augment our problem-solving capacity. We rely on them to expand our minds and provide
+                            ease, accuracy, and [...]</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- Subscription part-->
+
+    <section class='subscription'>
+        <div class="container">
+            <div class="subscription-wrapper">
+                <div>
+                    <h2 class="subscription-wrapper-title">Start Learning</h2>
+                    <p class="subscription-wrapper-text">Get the latest articles, tutorials, and free resources from
+                        <br> Morphocode </p>
+
+                </div>
+                <form class="subscription-form">
+                    <input type="email" placeholder="Enter your email address" >
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="container">
+        <div class="footer-wrapper">
+            <ul class="footer-wrapper__list">
+                <li class="footer-wrapper__list-item">
+                    <span class="heading">Academy</span>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Start learning</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Lorem, ipsum.</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Lorem, ipsum.</a>
+                </li>
+            </ul>
+
+            <ul class="footer-wrapper__list">
+                <li class="footer-wrapper__list-item">
+                    <a class="heading">Academy</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Start learning</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Lorem, ipsum.</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Lorem, ipsum.</a>
+                </li>
+            </ul>
+
+            <ul class="footer-wrapper__list">
+                <li class="footer-wrapper__list-item">
+                    <a class="heading">Academy</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Start learning</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Lorem, ipsum.</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Lorem, ipsum.</a>
+                </li>
+            </ul>
+
+            <ul class="footer-wrapper__list">
+                <li class="footer-wrapper__list-item">
+                    <a class="heading">Academy</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Start learning</a>
+                </li>
+                <li class="footer-wrapper__list-item">
+                    <a href="">Start learning</a>
+                </li>
+               <hr class="blog-post-text_hr">
+
+               <li>
+                   <ul class="social-net">
+                       <li>
+                           <a href="">
+                            <svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 6.53125H6.25V4.15625C6.25 3.50075 6.81 2.96875 7.5 2.96875H8.75V0H6.25C4.17875 0 2.5 1.59481 2.5 3.5625V6.53125H0V9.5H2.5V19H6.25V9.5H8.75L10 6.53125Z" fill="#1976D2"/>
+                                </svg>
+                                
+                           </a>
+                        </li>
+                       <li>
+                           <a href="">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.97535 15.4414C13.1456 15.4414 17.0666 9.50118 17.0666 4.35021C17.0666 4.18148 17.0631 4.01347 17.0556 3.84634C17.8166 3.29607 18.4782 2.6094 19 1.82779C18.3016 2.13829 17.5499 2.34717 16.7614 2.44154C17.5663 1.95883 18.1842 1.19548 18.4756 0.285424C17.7224 0.731897 16.8883 1.05631 16.0003 1.23157C15.2889 0.47387 14.2761 0 13.1547 0C11.0021 0 9.25634 1.74574 9.25634 3.89765C9.25634 4.20366 9.29055 4.50112 9.35738 4.78654C6.11755 4.62346 3.24461 3.0724 1.32217 0.713632C0.987459 1.2897 0.794374 1.95897 0.794374 2.67304C0.794374 4.02536 1.48264 5.21939 2.5291 5.9178C1.88954 5.89808 1.28883 5.72254 0.763643 5.4303C0.763063 5.44668 0.763063 5.46263 0.763063 5.48002C0.763063 7.36797 2.10669 8.94425 3.89055 9.30143C3.56294 9.39058 3.21823 9.43856 2.86265 9.43856C2.61187 9.43856 2.36747 9.41391 2.12988 9.36825C2.62622 10.9171 4.06537 12.0442 5.77153 12.0758C4.43733 13.1215 2.75654 13.7444 0.929911 13.7444C0.61564 13.7444 0.305138 13.7264 0 13.6905C1.72515 14.7962 3.77371 15.4414 5.97535 15.4414Z" fill="#1976D2"/>
+                                </svg>
+                                
+                           </a>
+                        </li>
+                       <li>
+                           <a href="">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.2813 0H1.7187C0.7695 0 0 0.7695 0 1.7187V17.2812C0 18.2305 0.7695 19 1.7187 19H17.2812C18.2305 19 19 18.2305 19 17.2812V1.7187C19 0.7695 18.2305 0 17.2813 0ZM5.87941 16.4059C5.87941 16.6821 5.65548 16.906 5.37924 16.906H3.25014C2.9739 16.906 2.74998 16.6821 2.74998 16.4059V7.48078C2.74998 7.20453 2.9739 6.98061 3.25014 6.98061H5.37924C5.65548 6.98061 5.87941 7.20453 5.87941 7.48078V16.4059ZM4.31469 6.13929C3.19762 6.13929 2.29204 5.2337 2.29204 4.11663C2.29204 2.99956 3.19762 2.09398 4.31469 2.09398C5.43176 2.09398 6.33735 2.99956 6.33735 4.11663C6.33735 5.2337 5.43181 6.13929 4.31469 6.13929ZM17.006 16.4461C17.006 16.7001 16.8001 16.906 16.5461 16.906H14.2614C14.0075 16.906 13.8016 16.7001 13.8016 16.4461V12.2598C13.8016 11.6353 13.9847 9.52313 12.1695 9.52313C10.7615 9.52313 10.4759 10.9688 10.4185 11.6176V16.4461C10.4185 16.7001 10.2126 16.906 9.95864 16.906H7.74897C7.495 16.906 7.28909 16.7001 7.28909 16.4461V7.44049C7.28909 7.18653 7.495 6.98061 7.74897 6.98061H9.95864C10.2126 6.98061 10.4185 7.18653 10.4185 7.44049V8.21914C10.9406 7.43562 11.7165 6.83085 13.3686 6.83085C17.0269 6.83085 17.006 10.2487 17.006 12.1266V16.4461Z" fill="#1976D2"/>
+                                </svg>
+                                
+                           </a>
+                        </li>
+                   </ul>
+               </li>
+
+            </ul>
+            
+        </div>
+    </footer>
+</body>
+
+</html>

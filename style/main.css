@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Sailec-Bold, Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mr-1{
+    margin-right: 15px;
+}
+/* Header */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0;
+}
+
+.nav .nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav .nav-list .nav-list__item{
+    list-style-type: none;
+    margin-left: 22px;
+}
+
+.nav .nav-list .nav-list__item a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    color: rgba(102, 102, 102, 0.85);
+    transition: all 0.35s;
+}
+
+.nav .nav-list .nav-list__item a:hover{
+    color: black;
+}
+
+
+/* Section classes */
+
+.section{
+    display: flex;
+    align-items: center;
+}
+
+.section-text__wrapper-title{
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0.25px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.section-text__wrapper-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #434A54;
+    margin-bottom: 28px;
+}
+
+.section-img__wrapper img{
+    pointer-events: none;
+}
+.section-text__wrapper-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;    
+    letter-spacing: 0.25px;
+    color: #1D6FF3;
+    transition: all 0.35s;
+}
+
+
+.section-text__wrapper-link:hover{
+    color: #193053;
+}
+
+
+/* Blog */
+
+
+.blog-section__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.25px;
+    color: #4A4A4A;
+    margin-bottom: 12px;
+}
+
+.blog-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-post{
+    position: relative;
+    margin-bottom: 200px;
+}
+
+
+.blog-post-text{
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 70%);
+    background-color: rgba(255, 255, 255, 95%);
+    margin: 0 25px;
+    padding: 16px;
+    
+}
+
+.blog-post-text a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #4A4A4A;
+}
+
+.blog-post-text_hr{
+    margin: 15px 0;
+    background: rgba(0, 0, 0, 0.1);
+    width: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-text p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #434A54;
+
+}
+
+/* Subscription */
+
+.subscription{
+    background-color: #eee;
+    padding: 78px;
+}
+
+.subscription-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscription-wrapper-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.25px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.subscription-wrapper-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #434A54;
+}
+
+.subscription-form{
+    display: flex;
+}
+
+.subscription-form input, button{
+    height: 42px;
+}
+
+.subscription-form input{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 44px;
+    letter-spacing: 0.25px;
+    color: rgba(151, 151, 151, 0.5);
+    padding: 15px 7px;
+    border: 1px solid rgba(151, 151, 151, 0.5) ;
+    outline: none;
+}
+
+/* .subscription-form input:focus{
+    outline: none;
+} */
+.subscription-form button{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    width: 118px;
+    background: #1D6FF3;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.subscription-form button:hover{
+    background-color: #102c58 ;
+}
+
+
+/* Footer section */
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 100px 0;
+}
+
+.footer-wrapper__list-item a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #637280;
+    transition: all 0.35s;
+}
+.footer-wrapper__list-item a:hover{
+    opacity: 0.7;
+}
+.footer-wrapper__list .heading{
+    display: inline-block;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+
+/* Social net */
+
+.social-net{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.35s;
+    padding: 5px;
+}
+
+.social-net li a svg path:hover{
+    fill: black;
+}
